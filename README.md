@@ -9,3 +9,7 @@ Según los alimentos y cantidades que ingrese el usuario, el programa calculará
 la cantidad de calorías que se han consumido. Al anteriormente ingresar una meta diaria 
 de calorías, el programa avisará cuando no se cumpla dicha meta, además de 
 que dará alternativas alimentarias para el usuario.
+
+# Primer avance
+En este primer avance se muestran los calculos que se van a utilizar
+para lograr el objetivo del programa.
