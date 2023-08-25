@@ -11,5 +11,5 @@ de calorías, el programa avisará cuando no se cumpla dicha meta, además de
 que dará alternativas alimentarias para el usuario.
 
 # Primer avance
-En este primer avance se muestran los calculos que se van a utilizar
+En este primer avance se muestran los cálculos que se van a utilizar
 para lograr el objetivo del programa.
