@@ -10,6 +10,12 @@ la cantidad de calorías que se han consumido. Al anteriormente ingresar una met
 de calorías, el programa avisará cuando no se cumpla dicha meta, además de 
 que dará alternativas alimentarias para el usuario.
 
-# Primer avance
+## Primer avance
 En este primer avance se muestran los cálculos que se van a utilizar
 para lograr el objetivo del programa.
+
+## Segundo avance
+En este segundo avance se agregaron dos funciones que contienen los cálculos
+del primer avance, además de akgunos condicionales. Se agregó también la 
+opción de que el usuario llame a las dos funciones dependiendo de la 
+información que quiera saber. (contador_calorias_avance_3.py)
