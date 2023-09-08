@@ -16,6 +16,11 @@ para lograr el objetivo del programa.
 
 ## Segundo avance
 En este segundo avance se agregaron dos funciones que contienen los cálculos
-del primer avance, además de akgunos condicionales. Se agregó también la 
+del primer avance, además de algunos condicionales. Se agregó también la 
 opción de que el usuario llame a las dos funciones dependiendo de la 
 información que quiera saber. (contador_calorias_avance_3.py)
+
+## Tercer avance
+En el tercer avance se agregaron las funciones de 'actividad_fisica'
+y 'objetivo_proteina', conteniendo 'actividad_fisica' condicionales.
+(contador_calorias.py)
