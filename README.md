@@ -24,3 +24,8 @@ información que quiera saber. (contador_calorias_avance_3.py)
 En el tercer avance se agregaron las funciones de 'actividad_fisica'
 y 'objetivo_proteina', conteniendo 'actividad_fisica' condicionales.
 (contador_calorias.py)
+
+## Cuarto avance
+Se agregó la función 'comida', que contiene un ciclo while. 
+Esta función calcula las calorias de una comida según el alimento y los gramos
+consumidos.
