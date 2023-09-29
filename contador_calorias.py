@@ -142,7 +142,54 @@ def comida():
     if alimento=='no':
         print('Las calorias de la comida son '+str(calorias_comida))
 
+def sugerencias_comida():#Crea una función que da sugerencias de comida
+    hora=input('Ingresa la comida que quieres: desayuno/comida/cena')#input para saber qué comida quiere el usuario
+    comida=[]#Crea la lista 'comida'
+    if hora=='desayuno':#Condicional para desayuno
+
+        #serie de inputs para las partes del desayuno
+        fruta=input('Escoge:\nsandia/platano')
+        cereal=input('Escoge\navena/tortilla')
+        carne=input('Escoge\njamon/huevo')
+        grasa=input('Escoge\nalmendra/aguacate')
+
+        #agrega los valores de los inputs a la lista 'comida'
+        comida.append(fruta)
+        comida.append(cereal)
+        comida.append(carne)
+        comida.append(grasa)
+
+    elif hora=='comida':#Condicional para comida
+
+        #serie de inputs para las partes de la comida
+        verdura=input('Escoge:\nlechuga/pepino')
+        cereal=input('Escoge\narroz/tortilla')
+        carne=input('Escoge\nres/cerdo')
+        grasa=input('Escoge\nnuez/aguacate')
+
+        #agrega los valores de los inputs a la lista 'comida'
+        comida.append(verdura)
+        comida.append(cereal)
+        comida.append(carne)
+        comida.append(grasa)
+
+    elif hora=='cena':#Condicional para cena
+
+        #serie de inputs para las partes del desayuno
+        fruta=input('Escoge:\nmanzana/naranja')
+        cereal=input('Escoge\narroz/pasta')
+        carne=input('Escoge\npollo/res')
+        grasa=input('Escoge\nalmendra/nuez')
+
+        #agrega los valores de los inputs a la lista 'comida'
+        comida.append(fruta)
+        comida.append(cereal)
+        comida.append(carne)
+        comida.append(grasa)
+
+    return comida#regresa la lista comida con los alimentos ingresados
 #Da al usuario la opción de elegir qué quiere saber
+
 opcion=int(input('Ingresa \n 1 para saber tus calorias de mantenimiento \n 2 para conocer las calorías resultantes \n 3 para conocer la proteina que debes ingerir \n 4 para conocer las calorias de una comida '))
 
 #Condicional para la opción 1
