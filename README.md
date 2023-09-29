@@ -29,3 +29,8 @@ y 'objetivo_proteina', conteniendo 'actividad_fisica' condicionales.
 Se agregó la función 'comida', que contiene un ciclo while. 
 Esta función calcula las calorias de una comida según el alimento y los gramos
 consumidos.
+
+## Quinto avance
+Se agregó la función 'sugerencia_comida', la cual usa listas para generar una
+recomendación de comida. Nota: No se ha implementado al menú de opciones con el objetivo de 
+usar listas anidadas.
