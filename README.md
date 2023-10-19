@@ -52,3 +52,162 @@ Durante el proyecto se utilizó una librería de python: Random
 ## Implementación de Random en el código
 Se utilizó 'random.choice' en la función 'comida', sirviendo esta función de la librería Random para 
 tomar elementos de una manera casi aleatoria de las listas creadas.
+
+# Correcciones
+Sub-Competencia: 
+El proyecto no contiene código que no se usa en comentarios, ni archivos extra en el repositorio (Revisón y Final)
+
+Error original: 
+Archivo extra con nombre 'contador_calorias_avance_3'.
+
+Cambio realizado:
+Se eliminó del repositorio.
+
+=============================
+Sub-Competencia: 
+Usa herramientas de control de veriosnes, de tal forma que se puedan observar los avances en los commits (Revisión y Final)
+
+Error original: 
+No se había realizado la entrega
+
+Cambio realizado: 
+No hubo cambios
+
+=============================
+Sub-Competencia: 
+Incorpora y explica nuevas funciones en su progra e incluya su referencias al API de pythoon. (Revisión y Final)
+
+Error original:
+No hubo entrega
+
+Cambio realizado:
+Se eactualizó el readme con el API. Se agregaron 4 funciones nuevas.
+
+Líneas de código donde se ve la corrección: Líneas 107-230
+
+def recomendacion():
+
+    #Crea la variable respuesta a través de un input
+    respuesta=input('Quieres una recomendacion de comida? si/no ')
+    if respuesta=='si':#Condicional si respuesta es 'si'
+        return True#Regresa el valor True
+    elif respuesta == 'no':#Condicional si la respuesta es 'no'
+        return False#Regresa el valor False
+
+#Función que limpia cadenas
+def limpia_cadena(cadena):
+
+    #Se eliminan '[]' y comillas
+    cadena_n1=cadena.replace("[",'')
+    cadena_n2=cadena_n1.replace("]",'')
+    cadena_n3=cadena_n2.replace("'",'')
+
+    #Regresa la cadena limpia
+    return cadena_n3
+
+#Función que da recomendaciones de comida    
+def comida():
+
+    #Llama a la función 'recomendacion'
+    res=recomendacion()
+
+    comida=[]#Crea la lista 'comida'
+
+    #Ciclo que se cumple mientras 'res' sea True
+    while res==True:
+
+        #Ciclo que recorre los elemento en la lista 'alimentos'
+        for i in alimentos:
+            #Escoge un elemento aleatorio de las listas anidadas
+            alimento=random.choice(i)
+            #Agrega el elemento anterior a la lista 'comida'
+            comida.append(alimento)
+
+        comida_s=str(comida)#Convierte la lista a string
+        comida_n=limpia_cadena(comida_s)#Llama a la función 'limpia_cadena'
+
+        #Imprime la recomendación de comida
+        print('Prueba una comida con ',comida_n,' !')
+      
+        comida=[]#Vacía la lista 'comida'
+
+        #Vuelve a llamar a la funcion 'recomendacion'
+        res=recomendacion()
+    
+    #Condicional para cuando 'res' es False
+    if res==False:
+        print('Provecho!')
+
+#Funcion que pregunta si se quiere elegir otra opcion
+def respuesta_opcion():
+
+    #Crea la variable respuesta a través de un input
+    respuesta=input('Quieres elegir otra opcion inicial? si/no ')
+    if respuesta=='si':#Condicional si respuesta es 'si'
+        return True#Regresa el valor True
+    elif respuesta == 'no':#Condicional si la respuesta es 'no'
+        return False#Regresa el valor False
+
+
+
+def main():
+    res=True
+    while res==True:
+        #Crea la variable opcion para comenzar un menu de opciones
+        opcion=(input('Ingresa \n 1 para saber tus calorias ' 
+                        'de mantenimiento \n 2 para conocer las calorías ' 
+                        'resultantes \n 3 para conocer la proteina que '
+                        'debes ingerir \n 4 para obtener recomendaciones de comida '))
+        opcion=int(opcion)
+
+        #Condicional para la opción 1
+        if opcion==1:
+            #Pide las variables de sexo, edad, peso y estatura al usuario
+            sexo=(input('Ingresa tu sexo como h para hombre y m para mujer. '))
+            edad=float(input('Ingresa tu edad en años. '))
+            peso=float(input('Ingresa tu peso en kg. '))
+            estatura=float(input('Ingresa tu estatura en cm. '))
+
+            #Llama a la función de 'calorias_de_mantenimiento'
+            print('Tus calorias de mantenimiento son',
+                  calorias_de_mantenimiento(sexo,edad,peso,estatura))
+
+        #Condicional para la opción 2
+        elif opcion==2:
+
+            #Pide ingresar las calorias consumidas hasta el momento
+            c_consumidas=float(input('Ingresa la cantidad de calorias'
+                                    ' ingeridas hasta el momento. '))
+
+            #Pide las variables de sexo, edad, peso y estatura al usuario
+            sexo=(input('Ingresa tu sexo como h para hombre y m para mujer. '))
+            edad=float(input('Ingresa tu edad en años. '))
+            peso=float(input('Ingresa tu peso en kg. '))
+            estatura=float(input('Ingresa tu estatura en cm. '))
+
+            #Llama a la función de 'resultado'
+            calorias_resultantes(c_consumidas,sexo,edad,peso,estatura)
+
+        #Condicional para la opción 3
+        elif opcion==3:
+
+            #Pide ingresar el peso
+            peso=float(input('Ingresa tu peso en kg '))
+
+            #Pide ingresar un valor correspondiente a la actividad física
+            print('Entrenamiento de fuerza: 1  Entrenamiento aeróbico: 2  Sin entrenamiento: 3')
+            actividad=int(input('Ingresa el numero correspondiente a tu actividad fisica '))
+
+            objetivo_proteina(peso,actividad)
+
+        #Condicional para la opción 4
+        elif opcion==4:
+
+            #Llama a la función 'comida'
+            comida()
+        res=respuesta_opcion()
+    if res==False:
+        print('Gracias por usar el programa!')
+main()
+
+==================================================================
