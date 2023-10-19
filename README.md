@@ -53,6 +53,8 @@ Durante el proyecto se utilizó una librería de python: Random
 Se utilizó 'random.choice' en la función 'comida', sirviendo esta función de la librería Random para 
 tomar elementos de una manera casi aleatoria de las listas creadas.
 
+(https://docs.python.org/es/3.12/library/random.html?highlight=random%20choice#random.choice)
+
 # Correcciones
 Sub-Competencia: 
 El proyecto no contiene código que no se usa en comentarios, ni archivos extra en el repositorio (Revisón y Final)
