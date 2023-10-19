@@ -149,7 +149,7 @@ def respuesta_opcion():
         return False#Regresa el valor False
 
 
-
+#Función main que despliega el menu de opciones
 def main():
     res=True
     while res==True:
